@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+  </head>
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <body>
+    <div class="container">
+      <h1 class="text-center">GP Calculator</h1>
+      <div class="form">
+        <div class="col">
+          <input
+            id="course-code"
+            class="form-control mb-5"
+            type="text"
+            placeholder="Course Code"
+          />
+        </div>
+        <div class="col">
+          <input
+            id="unit-load"
+            class="form-control mb-4"
+            type="number"
+            placeholder="Credithour"
+            min="1"
+            max="15"
+          />
+        </div>
+        <div class="col">
+          <select id="grade" class="form-control">
+            <option value="">Grade</option>
+            <option value="5">A</option>
+            <option value="4">B</option>
+            <option value="3">C</option>
+            <option value="2">D</option>
+            <option value="1">E</option>
+            <option value="0">F</option>
+          </select>
+        </div>
+        <div class="col">
+          <input
+            id="add"
+            class="btn btn-primary mt-2"
+            type="button"
+            value="Add"
+          />
+        </div>
+      </div>
+      <table id="table" class="table table-bordered display-none mt-4">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Credithour</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot id="tfoot"></tfoot>
+      </table>
+      <div class="row">
+        <div class="col">
+          <input
+            id="calc-gp"
+            class="btn btn-success display-none mt-5"
+            type="button"
+            value="Calc GP"
+          />
+        </div>
+        <div class="col">
+          <input
+            id="clear"
+            class="btn btn-warning display-none mt-5"
+            type="button"
+            value="Clear"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/font.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/swiper-bundle.esm.browser.min.js"></script>
+  </body>
+</html>
